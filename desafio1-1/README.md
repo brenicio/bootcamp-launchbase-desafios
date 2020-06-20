@@ -1,3 +1,3 @@
-# Desafio de calculo de aposentadoria e calculo IMC
+# Calculo de aposentadoria e Calculo IMC
 
-> Estes desafios tem como proposta testar os conhecimentos de variaveis, operadores logicos e calculos utilizando o javascript.
+> Este desafio tem como proposta testar os conhecimentos de variaveis, operadores logicos e calculos utilizando o javascript.
