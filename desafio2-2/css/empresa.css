@@ -1,0 +1,73 @@
+@import 'style.css';
+
+
+header {
+    background: none;
+    border-bottom: none;
+    padding: 10px
+}
+
+#wrapper {
+    text-align: center;
+    padding: 18px;
+}
+
+#wrapper img {
+    border-radius: 50%;    
+    border: 5px solid var(--color-green);
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+#wrapper h1 {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: bold;
+}
+
+#wrapper h2{
+    margin-top: 8px;
+    font-weight: normal;
+    opacity: 0.8;
+    line-height: 34px;
+}
+
+#wrapper p {
+    max-width: 600px;
+    margin: 10px auto;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+#wrapper #lista-tech{
+    margin-top: 20px;    
+}
+
+#wrapper #lista-tech ul{
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#wrapper #lista-tech li{
+    font-size: 15px;
+    line-height: 22px;
+}
+
+#wrapper #social{
+    margin-top: 70px;    
+}
+
+#wrapper #social a {
+    margin: 0 30px;
+}
+
+#wrapper #social a img:hover {
+    border: 2px solid var(--color-green);
+    transition: color 300ms;
+
+}
+
+#wrapper #social a img {
+    width: 35px;    
+    border: none
+}
