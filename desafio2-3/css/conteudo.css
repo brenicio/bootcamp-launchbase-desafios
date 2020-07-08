@@ -1,41 +1,55 @@
 @import 'style.css';
 
 section.cards {
-    background: red;
-    max-width: 1426px;
-    height: 90vh;
-    padding: 10px;
-    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    height: 600px;
+    padding: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    column-gap: 15px;
 }
 
 section.cards > div.card {
-    background: greenyellow;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    border: 2px solid black;
+    padding: 30px;
+    border-radius: 8px;
+    border: 2px rgb(11, 10, 13) solid;
+    border-image: initial;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
-    background: url(https://app.rocketseat.com.br/static/media/FeaturedCardBg.40a7d53e.png);
+    background: url(https://app.rocketseat.com.br/static/media/FeaturedCardBg.40a7d53e.png);    
+}
+
+section.cards > div.card.starter:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+    border-color: rgb(113, 89, 193);
+}
+
+section.cards > div.card.launchbase:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+    border-color: rgb(253, 149, 31);
+}
+
+section.cards > div.card.gostack:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+    border-color: rgb(4, 211, 97);
 }
 
 section.cards > div.card > div.card_title {
-    border: 2px black solid;
     width: 48px;
     height: 48px;
     padding: 10px;
 }
 
 section.cards > div.card > div.card_title span {
-    color: rgb(113, 89, 193);
-    border-radius: 50%;
-    border: 2px rgb(113, 89, 193) solid;
+    border-radius: 50%;    
     border-image: initial;
     font-weight: bold;
     font-size: 16px;
@@ -44,8 +58,19 @@ section.cards > div.card > div.card_title span {
     padding: 10px;
 }
 
-section.cards > div.card > div.card_info {
+div.card.starter > div.card_title span {
+    color: rgb(113, 89, 193);
+    border: 2px rgb(113, 89, 193) solid;
+}
 
+div.card.launchbase > div.card_title span {
+    color: rgb(253, 149, 31);
+    border: 2px  rgb(253, 149, 31) solid;
+}
+
+div.card.gostack > div.card_title span {
+    color: rgb(4, 211, 97);
+    border: 2px rgb(4, 211, 97) solid;
 }
 
 section.cards > div.card > div.card_info p {
@@ -56,7 +81,63 @@ section.cards > div.card > div.card_info p {
     line-height: 26px;
 }
 
-section.cards > div.card > div.card_info p strong {
+div.card.starter > div.card_info p strong {
     color: rgb(113, 89, 193);
+}
+
+div.card.launchbase > div.card_info p strong {
+    color: rgb(253, 149, 31);
+}
+
+div.card.gostack > div.card_info p strong {
+    color: rgb(4, 211, 97);
+}
+
+/*==MODAL==*/
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 40%;
+    height: 60%;
+    margin: 5vh auto;
+    position: relative;
+    border-radius: 2%;    
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute; /** POSIÇÃO ABSOLUTA EM RELAÇÃO A POSIÇÃO RELATIVA DO MODAL**/
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal .maximize-modal {
+    color: black;
+    position: absolute;
+    top: 11px;
+    right: 50px;
+    cursor: pointer;
+}
+
+/*==MODAL.ACTIVE==*/
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*==MODAL.MAXIMIZE==*/
+.modal.maximize {
+    width: 70%;
+    height: 90%;
 }
 
