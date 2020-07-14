@@ -107,7 +107,7 @@ div.card.gostack > div.card_info p strong {
 .modal {
     background-color: white;
     width: 40%;
-    height: 60%;
+    height: 90%;
     margin: 5vh auto;
     position: relative;
     border-radius: 2%;    
@@ -137,7 +137,13 @@ div.card.gostack > div.card_info p strong {
 
 /*==MODAL.MAXIMIZE==*/
 .modal.maximize {
-    width: 70%;
+    width: 90%;
     height: 90%;
 }
 
+iframe {
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    top: 5%
+}
